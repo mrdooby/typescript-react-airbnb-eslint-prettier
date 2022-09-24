@@ -1,20 +1,23 @@
-For airbnb installs and peer deps
+## For airbnb installs and peer deps
 https://blog.logrocket.com/linting-typescript-using-eslint-and-prettier/
-
+```
 npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb-typescript eslint-plugin-jest
 npx install-peerdeps --dev eslint-config-airbnb
 npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+```
 
-For eslint and prettier config files
+## For eslint and prettier config files
 https://www.alexey-nikiforov.name/setup-react-app-with-typescript-eslint-and-prettier
 
+```
 // package.json
 "scripts": {
   ...
   "lint": "eslint src", // just check errors
   "lint-fix": "eslint src --quiet --fix" // fix lint errors
 }
-
+```
+```
 // .prettierrc
 {
   "arrowParens": "always",
@@ -23,7 +26,9 @@ https://www.alexey-nikiforov.name/setup-react-app-with-typescript-eslint-and-pre
   "jsxBracketSameLine": false,
   "trailingComma": "none"
 }
+```
 
+```
 // .eslintignore
 .config
 node_modules/*
@@ -32,7 +37,9 @@ public/*
 scripts/*
 src/react-app-env.d.ts
 src/reportWebVitals.ts
+```
 
+```
 // .eslintrc
 {
   "parser": "@typescript-eslint/parser",
@@ -87,3 +94,4 @@ src/reportWebVitals.ts
     ]
   }
 }
+```
